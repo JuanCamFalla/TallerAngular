@@ -1,3 +1,29 @@
-<p>
-  serie works!
-</p>
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">Course's Name</th>
+          <th class="h4">Professor's Name</th>
+          <th class="h4">Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of series">
+          <td>
+            <dd>{{s.id}}</dd>
+          </td>
+          <td>
+            <dd>{{s.nombre}}</dd>
+          </td>
+          <td>
+            <dd>{{s.canal}}</dd>
+          </td>
+          <td>
+            <dd>{{s.temporadas}}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
