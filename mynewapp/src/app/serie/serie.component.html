@@ -3,9 +3,10 @@
     <table class="table">
       <thead>
         <tr>
-          <th class="h4">Course's Name</th>
-          <th class="h4">Professor's Name</th>
-          <th class="h4">Credits</th>
+          <th class="h4">#</th>
+          <th class="h4">Nombre</th>
+          <th class="h4">Canal</th>
+          <th class="h4">Temporadas</th>
         </tr>
       </thead>
       <tbody>
@@ -14,14 +15,17 @@
             <dd>{{s.id}}</dd>
           </td>
           <td>
-            <dd>{{s.nombre}}</dd>
+            <dd>{{s.name}}</dd>
           </td>
           <td>
-            <dd>{{s.canal}}</dd>
+            <dd>{{s.channel}}</dd>
           </td>
           <td>
-            <dd>{{s.temporadas}}</dd>
+            <dd>{{s.seasons}}</dd>
           </td>
+        </tr>
+        <tr>
+          <td>Promedio Temporadas: {{promedioTemporadas}}</td>
         </tr>
       </tbody>
     </table>
