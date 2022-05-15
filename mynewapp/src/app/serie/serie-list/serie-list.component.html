@@ -1,0 +1,22 @@
+<div *ngIf="selected">
+  <app-serie-detail [serieDetail]="selectedSerie"></app-serie-detail>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let serie of series">
+          <div class="card p-2" style="width: 15rem; height: 20rem">
+              <img
+                class="card-img-top"
+                src="{{serie.poster}}"
+                alt="{{ serie.name}}"
+                (click)="onSelected(serie)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ serie.name }}</h5>
+                  <p class="card-text">{{ serie.seasons }}</p>
+                  <p class="card-text">{{ serie.channel }}</p>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>
